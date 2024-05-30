@@ -10,6 +10,30 @@ export const navItems: INavData[] = [
       text: 'NEW'
     }
   },
+  ///---------------ADOPCION INICIO
+  {
+    title: true,
+    name: 'Indice de Adopciones'
+  },
+  {
+    name: 'Adopciones',
+    url: '/adopciones',
+    iconComponent: { name: 'cil-puzzle' },
+    children: [
+      {
+        name: 'Adopcion',
+        url: '/adopciones/adopcion',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Reportes',
+        url: '/adopciones/reportes',
+        icon: 'nav-icon-bullet'
+      },
+    
+    ]
+  },
+  ///---------------ADOPCION FINAL
   {
     title: true,
     name: 'Theme'

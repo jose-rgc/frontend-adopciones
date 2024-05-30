@@ -1,0 +1,97 @@
+<c-row ngPreserveWhitespaces>
+    <c-col xs="12">
+        <c-card class="mb-4">
+            <c-card-header>
+              <strong>Formulario Adopciones</strong>
+            </c-card-header>
+            <c-card-body>
+                <form cForm>
+                  <div class="mb-3">
+                    <label cLabel for="nombre_adoptante">Nombre del Adoptante</label>
+                    <input cFormControl
+                           id="nombre_adoptante"
+                           placeholder="Ingrese nombre_adoptante"
+                           type="text"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label cLabel for="nombre_mascota">Nombre de la Mascota</label>
+                    <input cFormControl
+                           id="nombre_mascota"
+                           placeholder="Ingrese nombre_mascota"
+                           type="text"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label cLabel for="genero">Genero</label>
+                    <input cFormControl
+                           id="genero"
+                           placeholder="Ingrese genero"
+                           type="text"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label cLabel for="edad">Edad</label>
+                    <input cFormControl
+                           id="edad"
+                           placeholder="Ingrese edad"
+                           type="number"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label cLabel for="contacto">Contacto</label>
+                    <input cFormControl
+                           id="contacto"
+                           placeholder="Ingrese contacto"
+                           type="number"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label cLabel for="fecha_vacunas">Fecha de Vacunas</label>
+                    <input cFormControl
+                           id="fecha_vacunas"
+                           placeholder="Ingrese fecha_vacunas"
+                           type="text"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label cLabel for="usuario">Usuario</label>
+                    <select aria-label="Selecione usuario" cSelect>
+                        <option></option>
+                        <option value="1">Julia</option>
+                        <option value="2">Esteban</option>
+                        <option value="3">Esther</option>
+                      </select>
+                  </div>
+                  <button cButton class="me-1" color="primary" type="submit">
+                    Guardar
+                  </button>
+                </form>
+            </c-card-body>
+          </c-card>
+        </c-col>
+        <c-col xs="12"> 
+            <table cTable>
+                <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nombre del Adoptante</th>
+                  <th scope="col">Nombre de la Mascota</th>
+                  <th scope="col">Usuario</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td><button cButton color="warning" variant="outline">Editar</button> <button cButton color="danger" variant="outline">Eliminar</button></td>
+                </tr>
+                
+                </tbody>
+              </table>
+        </c-col>
+
+        </c-row>
